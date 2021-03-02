@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>War of the Vision Fandow</title>
+</head>
+
+<body>
+[% include '/includes/_header.html' %]
+<div id='app'>
+    {{message}}
+    [[teste]]
+</div>
+<div class="col-sm-2 float-right">
+    <img src="/static/wotv-ffbe-dump/img/units/FF14boss.png" class="float-right"/>
+</div>
+
+<div id="chart_divl"></div>
+[% include '/includes/_footer.html' %]
+</body>
+<script>
+    new Vue({
+        el: '#src',
+        data: {message: [[teste | tojson]]}
+    })
+</script>
+</html>

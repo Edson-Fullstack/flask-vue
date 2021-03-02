@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+[% include '/includes/_header.html' %]
+<div id='app'>
+    {{message}}
+</div>
+<div class="col-sm-2 float-right">
+    <img src=[[info.image]] onclick=show([[test|tojson]]) class="float-right"/>
+</div>
+
+<div id="chart_divl"></div>
+[% include '/includes/_footer.html' %]
+</body>
+<script>
+    new Vue({
+        el: '#src',
+        data: {
+            message: [[info.sname | tojson]]
+        }
+    })
+</script>
+
+<script src="/static/js/chart.js" type="text/javascript"></script>
+</html>

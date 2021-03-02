@@ -1,0 +1,19 @@
+[default]
+DEBUG = true
+SECRET_KEY = "secret"
+SQLALCHEMY_TRACK_MODIFICATIONS = true
+
+[testing]
+
+[development]
+DEBUG = true
+SQLITE_URI = 'sqlite:////mnt/c/Users/AzK-v/Programs/workplace/dev/python/wotv/databases/database.dbp'
+POSTGRES_URI = 'postgresql://postgres:668262aZ@localhost:5432'
+POSTGRESQLGCP_URI = 'postgresql://postgres:Bx-rM1Ub@34.121.238.126:5432'
+MYSQL_URI = 'mysql://user:password@localhost/mydatabase'
+
+[homolog]
+
+
+[production]
+SQLITE_URI = 'postgres:///databases/database.db'

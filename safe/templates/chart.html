@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Prova</title>
+</head>
+
+<body>
+{% include '/includes/_header.html' %}
+{% include '/includes/_menu_lateral.html' %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="chartjs-size-monitor"
+         style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div class="chartjs-size-monitor-expand"
+             style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+        </div>
+        <div class="chartjs-size-monitor-shrink"
+             style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+        </div>
+    </div>
+    <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Titulo da Tela</h1>
+    </div>
+
+    <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="547" height="230"
+            style="display: block; width: 547px; height: 230px;"></canvas>
+
+    <h2>Tabela</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Data</th>
+                <th>Demanda</th>
+                <th>Capacidade</th>
+                <th>Atendimento Planejado</th>
+                <th>Atendimento Realizado</th>
+                <th>Desvio</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <th>01/01/2019</th>
+                <th>30/12/2019</th>
+                <th>58</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>02/02/2019</th>
+                <th>30/12/2019</th>
+                <th>62</th>
+                <th>27/12/2019</th>
+                <th>29/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>03/03/2019</th>
+                <th>30/12/2019</th>
+                <th>114</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>04/04/2019</th>
+                <th>30/12/2019</th>
+                <th>122</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>05/05/2019</th>
+                <th>30/12/2019</th>
+                <th>132</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>06/06/2019</th>
+                <th>30/12/2019</th>
+                <th>150</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th>07/07/2019</th>
+                <th>30/12/2019</th>
+                <th>170</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th>08/08/2019</th>
+                <th>30/12/2019</th>
+                <th>144</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th>09/09/2019</th>
+                <th>30/12/2019</th>
+                <th>187</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <th>10/10/2019</th>
+                <th>30/12/2019</th>
+                <th>150</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>11</th>
+                <th>11/11/2019</th>
+                <th>30/12/2019</th>
+                <th>60</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <th>12</th>
+                <th>26/12/2019</th>
+                <th>30/12/2019</th>
+                <th>44</th>
+                <th>27/12/2019</th>
+                <th>28/12/2019</th>
+                <th>Outros</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+
+<!-- Graphs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Jassdasd", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                data: [58, 62, 114, 122, 132, 150, 170, 144, 187, 150, 60, 44],
+                lineTension: 0,
+                backgroundColor: 'transparent',
+                borderColor: '#007bff',
+                borderWidth: 4,
+                pointBackgroundColor: '#007bff'
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: false
+                    }
+                }]
+            },
+            legend: {
+                display: false,
+            }
+        }
+    });
+</script>
+<!-- <div class="container col-md-8">
+    <embed type="image/svg+xml" src={{graph_data|safe}} style='max-width:400px' />
+</div>-->
+{% include '/includes/_footer.html' %}
+</body>
+
+</html>

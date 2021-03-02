@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "safe"
+version = "0.1.0"
+description = "configuration of developer env and python flask"
+license = "MIT"
+authors = ["edson.fullstack@gmail.com"]
+readme = "README.md"
+repository = ""
+homepage = ""
+
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+setuptools = "^2.4.1"
+Flask = "*"
+flask-sqlalchemy = "*"
+#flask-Bootstrap = "*"
+#flask-migrate = "*"
+sqlalchemy-migrate = "*"
+requests = "*"
+gunicorn = "*"
+#celery = "*"
+dynaconf = "*"
+flask_admin = "*"
+flask_restful = "*"
+flask_simplelogin = "*"
+flask_marshmallow = "*"
+dataset = "*"
+stuf = "*"
+psycopg2-binary = "*"
+#gpt
+starlette="*"
+numpy="1.16.4"
+tensorflow = "1.14.0"
+gpt2-client = "2.1.5"
+flask-vuejs = "*"
+
+[tool.poetry.dev-dependencies]
+#pytest = "^3.10.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+expt  = 'poetry run pip freeze > ./wotv/requirements.txt'
+expt2 = "poetry export -f requirements.txt > ./wotv/requirements.txt"
+d = "docker build -t flask  ."
+e3 = "flask run"
