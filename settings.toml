@@ -8,7 +8,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = true
 [development]
 DEBUG = true
 SQLITE_URI = 'sqlite:////mnt/c/Users/AzK-v/Programs/workplace/dev/python/wotv/databases/database.dbp'
-POSTGRES_URI = 'postgresql://postgres:668262aZ@localhost:5432'
+POSTGRES_URI = 'postgresql://postgres:1234@localhost:5432'
 POSTGRESQLGCP_URI = 'postgresql://postgres:Bx-rM1Ub@34.121.238.126:5432'
 MYSQL_URI = 'mysql://user:password@localhost/mydatabase'
 
